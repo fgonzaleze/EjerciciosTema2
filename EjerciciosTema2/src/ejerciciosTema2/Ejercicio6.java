@@ -2,7 +2,7 @@ package ejerciciosTema2;
 
 import java.util.Scanner;
 
-public class Ejercio6 {
+public class Ejercicio6 {
 
 	public static void main(String[] args) {
 		double raiz;
