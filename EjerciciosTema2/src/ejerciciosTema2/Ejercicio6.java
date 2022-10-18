@@ -27,6 +27,7 @@ public class Ejercicio6 {
 			x2 = (-b - Math.sqrt(raiz)/2*a);
 			System.out.println("El resultado es " + x1 + " y " + x2);
 		}
+		sc.close();
 		
 
 	}

@@ -17,8 +17,10 @@ public class Ejercicio5 {
 		num3= sc.nextInt();
 		if (num3 >= num2 && num2 >= num1 && num3 >= num1){
 			System.out.println(num3 + " , " + num2 + " , " + num1);
-		if (num3 >= num1 && num2 >= num1 && num3 >= num1) {
-			System.out.println(num3 + "," + num1 + "," + num2);
+		} else (num3 >= num1 && num2 >= num1 && num3 >= num1) {
+			System.out.println(num3 + " , " + num1 + " , " + num2);
+		
+		
 		}
 		//} else { 
 			//System.out.println( num2 + " , " + num1 + " , " + " , " + num3);
