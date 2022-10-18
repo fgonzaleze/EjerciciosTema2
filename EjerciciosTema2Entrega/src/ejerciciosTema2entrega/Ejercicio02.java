@@ -8,12 +8,15 @@ public class Ejercicio02 {
 		// Diseña una aplicación en la que, dado un número de DNI, calcule la letra que
 		// le corresponde.
 		// Observa que un número de 8 dígitos está dentro del rango del tipo int.
-		int dni;
-		int letra;
+		int dni;//Introducimos el DNI, que será el número que solicitemos sin la letra
+		int letra;//Guardamos letra para el número que se corresponda desde el 0 al 23 y que será un valor asignado dentro de cada case
+		//Solicitamos el número del dni con un Scanner
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Escriba su DNI sin letra: ");
 		dni = sc.nextInt();
+		//La letra será el número que obtengamos con el módulo 23 del dni solicitado
 		letra = dni % 23;
+		//Realizamos un switch en el que cada case se corresponde a un número y una letra. En cada case imprimimos la letra que ese número tiene asignado
 		switch (letra) {
 		case 0 -> {
 			System.out.println("La letra de su DNI es T");
