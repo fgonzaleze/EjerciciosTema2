@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
+		//Añadir comentarios
 		double raiz;
 		double a;
 		double b;
@@ -16,9 +17,8 @@ public class Ejercicio6 {
 		a = sc.nextDouble();
 		System.out.println("Escriba el valor de b: ");
 		b = sc.nextDouble();
-		System.out.println("Escriba el valor de a: ");
-		c = sc.nextDouble();
 		System.out.println("Escriba el valor de c: ");
+		c = sc.nextDouble();
 		raiz = b*b - 4*a*c;
 		if(raiz <0) {
 			System.out.println("No hay solución");
