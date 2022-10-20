@@ -11,29 +11,29 @@ public class Ejercicio03 {
 		//comida que come cada animal), y determine si disponemos de alimento suficiente para cada animal. En caso negativo, ha de calcular 
 		//cuál es la ración que corresponde a cada uno de los animales.
 		//Nota: Evita que la aplicación realice divisiones por cero.
-		double comidaComprada;
-		double numAnimales;
-		double kilosComida;
-		double resultadoComida;
-		double porcion;
+		double comidaComprada;																			//Variable para saber la comida comprada, de la que disponemos para repartir
+		double numAnimales;																				//Variable para saber la candidad de animales 
+		double kilosComida;																				//Variable para saber  la cantidad de comida que necesita cada animal
+		double resultadoComida;																			//Variable para establecer el resultado de la comida que necesitaremos
+		double porcion;																					//Variable para establecer la porción que tomará cada animal
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Cantidad de comida comprada en kilos: ");
-		comidaComprada = sc.nextInt();
+		System.out.println("Cantidad de comida comprada en: ");
+		comidaComprada = sc.nextInt();																	//Obtenemos la comida comprada
 		System.out.println("Número de animales a alimentar: ");
-		numAnimales = sc.nextInt();
+		numAnimales = sc.nextInt();																		//Obtenemos el número de animales que tendremos que alimentar
 		System.out.println("Kilos de comida que necesita cada animal: ");
-		kilosComida = sc.nextInt();
-		resultadoComida = numAnimales*kilosComida;
-		porcion = comidaComprada / (numAnimales*kilosComida);
-		if  (numAnimales == 0) {
+		kilosComida = sc.nextInt();																		//Obtenemos la comida que necesita cada animal
+		resultadoComida = numAnimales*kilosComida;														//Calculamos la comida multiplicando los animales que tenemos por la comida que necesitan
+		porcion = comidaComprada / (numAnimales*kilosComida);											//La porción será la comida comprada entre el número de animles por la comida que necesita
+		if  (numAnimales == 0) {																		//Usamos el condicional if por si no hubiese animales para alimentar
 			System.out.println("No hay animales que alimentar");
 		}
-		else if (resultadoComida < comidaComprada) {
-			System.out.println("Hay comida suficiente");
-		} else { 
-			System.out.println("No hay comida suficiente, la ración para cada animal es:" + porcion);
+		else if (resultadoComida < comidaComprada) {													//Usamos el else if en caso de que haya comida suficiente, que el resultado de la comida, 
+			System.out.println("Hay comida suficiente");												//será menor que la comida comprada
+		} else { 																						//El else en este caso, será la otra posibilidad, y es que no haya comida suficiente. 
+			System.out.println("No hay comida suficiente, la ración para cada animal es:" + porcion);	//Aún así aunque no haya comida suficiente, podemos repartir la comida equitativamente con la variable porción.
 		}
-		sc.close();
+		sc.close();																						//Cerramos el escáner
 	}
 
 }

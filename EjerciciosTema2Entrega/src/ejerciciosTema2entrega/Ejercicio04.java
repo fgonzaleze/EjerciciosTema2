@@ -11,30 +11,27 @@ public class Ejercicio04 {
 		int num;
 		int decena;
 		int unidad;
-		String unidadStr;
-		String decenaStr;
+		String unidadStr;															// Usamos un string para las unidades
+		String decenaStr;															// Usamos un string para las decenas
 		Scanner sc = new Scanner(System.in);
-		// Pedimos el numero
-		System.out.println("Escriba un número: ");
+		System.out.println("Escriba un número: ");									// Pedimos el número
 		num = sc.nextInt();
-		// Las decenas serán el numero dividido entre 10
-		decena = num / 10;
-		// Las unidades seran el numero con el modulo 10
-		unidad = num % 10;
-		if ((num >= 11 && num <= 15) || num == 20 || num == 10) {
-			switch (num) {
-			case 10 -> System.out.println("Diez");
-			case 11 -> System.out.println("Once");
-			case 12 -> System.out.println("Doce");
-			case 13 -> System.out.println("Trece");
-			case 14 -> System.out.println("Catorte");
-			case 15 -> System.out.println("Quince");
-			case 20 -> System.out.println("Veinte");
+		decena = num / 10;															// Las decenas serán el numero dividido entre 10
+		unidad = num % 10;															// Las unidades seran el numero con el modulo 10
+		if ((num >= 11 && num <= 15) || num == 20 || num == 10) {					// Ponemos un condicional con las siguientes condiciones: si está entre el 11 y el 15 (es decir, 
+			switch (num) {															// "once", "doce", "trece", "catorce" y "quince"); o si el número es 20 ("veinte"); o si el número es
+			case 10 -> System.out.println("diez");									// 10 ("diez"). Estas son las condiciones que tienen que comprobarse primero, 
+			case 11 -> System.out.println("dnce");									// ya que conforman las excepciones gramaticales.
+			case 12 -> System.out.println("doce");
+			case 13 -> System.out.println("trece");
+			case 14 -> System.out.println("catorce");
+			case 15 -> System.out.println("quince");
+			case 20 -> System.out.println("veinte");
 			}
-		} else {
-			switch (decena) {
-			case 0 -> {
-				decenaStr = "";
+		} else {																	// En el else, ponemos el caso que comprueba si no se cumpliese el if
+			switch (decena) {														// En el switch vamos a comprobar en cada case a que decena se corresponde y  
+			case 0 -> {																// vamos a asignarlo al string decenaStr, que después utilizaremos
+				decenaStr = "";														// Si la decena fuese 0, asignamos "" para que el string esté vacío
 			}
 			case 1 -> {
 				decenaStr = "dieci";
@@ -67,14 +64,8 @@ public class Ejercicio04 {
 				decenaStr = "";
 			}
 			}
-			if (num == 10) {
-				System.out.println("Diez");
-			}
-			if (num == 20) {
-				System.out.println("Veinte");
-			}
-			switch (unidad) {
-			case 1 -> {
+			switch (unidad) {														// Una vez obtengamos la unidad, usamos el switch con el case para cada uno 
+			case 1 -> {																// de los números del 1 al 9, y asignandolos al string
 				unidadStr = "uno";
 			}
 			case 2 -> {
@@ -105,13 +96,13 @@ public class Ejercicio04 {
 				unidadStr = "";
 			}
 			}
-			if (unidad == 0 || decena  == 0 || decena == 2 || decena == 1) {
-				System.out.println(decenaStr + unidadStr);
+			if (unidad == 0 || decena  == 0 || decena == 2 || decena == 1) {		// Por último, si la unidad es 0 o la decena es 0, 2 o 1, querremos 
+				System.out.println(decenaStr + unidadStr);							// imprimirlos sin la letra "y", por ejemplo 28 "veintiocho"
 			} else {
-				System.out.println(decenaStr + " y " + unidadStr);
-			}
+				System.out.println(decenaStr + " y " + unidadStr);					// En cambio, si no se cumple lo anterior, querremos imprimirlos con una "y" 
+			}																		// para completar correctamente el número gramaticalmente.
 		}
-		sc.close();
+		sc.close();																	// Cerramos el escáner
 	}
 
 }
