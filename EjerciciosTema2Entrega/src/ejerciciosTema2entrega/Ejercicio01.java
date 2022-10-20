@@ -8,13 +8,24 @@ public class Ejercicio01 {
 		// Escribe una aplicación que solicite al usuario un número comprendido entre 0 y 9999. La aplicación tendrá que indicar si 
 		//el número introducido es capicúa.
 		int num;
+		int u;
+		int d;
+		int c;
+		int m;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce un número del 1 al 9999: ");
 		num = sc.nextInt();
+		u = num % 10;
+		d = (num/10)%10;
+		c = (num/1000)%10;
+		m = num / 1000;
 		
+		if (num <= 9) {
+			System.out.println("El número es capicúa.");
+		}
 			
-
-
+		
+		sc.close();
 	}
 
 }

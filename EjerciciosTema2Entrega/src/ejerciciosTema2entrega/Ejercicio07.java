@@ -20,7 +20,7 @@ public class Ejercicio07 {
 		
 		if (seg>59) {
 			seg = 0;
-			min =min + 1;
+			min = min + 1;
 		}
 		if (min>59) {
 			min = 0;
