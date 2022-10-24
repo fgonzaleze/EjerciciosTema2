@@ -8,6 +8,15 @@ public class Ejercicio04 {
 		// Escribe un programa que solicite al usuario un número entero entre 1 y 99. El
 		// programa debe mostrarlo con letras,
 		// por ejemplo, para 56 se verá: “cincuenta y seis”.
+		
+		//Prueba: Introduzco 1, sale "uno"
+		//Prueba: Introduzco 11, sale "once"
+		//Prueba: Introduzco 20, sale "veinte"
+		//Prueba: Introduzco 21, sale "veintiuno"
+		//Prueba: Introduzco 30, sale "treinta"
+		//Prueba: Introduzco 35, sale "treinta y cinco"
+		//Prueba: Introduzco 50, sale "cincuenta"
+		
 		int num;
 		int decena;
 		int unidad;
@@ -21,7 +30,7 @@ public class Ejercicio04 {
 		if ((num >= 11 && num <= 15) || num == 20 || num == 10) {					// Ponemos un condicional con las siguientes condiciones: si está entre el 11 y el 15 (es decir, 
 			switch (num) {															// "once", "doce", "trece", "catorce" y "quince"); o si el número es 20 ("veinte"); o si el número es
 			case 10 -> System.out.println("diez");									// 10 ("diez"). Estas son las condiciones que tienen que comprobarse primero, 
-			case 11 -> System.out.println("dnce");									// ya que conforman las excepciones gramaticales.
+			case 11 -> System.out.println("once");									// ya que conforman las excepciones gramaticales.
 			case 12 -> System.out.println("doce");
 			case 13 -> System.out.println("trece");
 			case 14 -> System.out.println("catorce");

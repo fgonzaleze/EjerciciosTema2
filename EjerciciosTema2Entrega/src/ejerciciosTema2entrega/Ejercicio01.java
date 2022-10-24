@@ -7,6 +7,16 @@ public class Ejercicio01 {
 	public static void main(String[] args) {
 		// Escribe una aplicación que solicite al usuario un número comprendido entre 0 y 9999. La aplicación tendrá que indicar si 
 		// el número introducido es capicúa.
+		
+		//Prueba: Introduzco 1234, no es capicua
+		//Prueba: Introduzco 1, da resultado capicúa
+		//Prueba: Introduzco 11, da resultado capicúa
+		//Prueba: Introduzco 12, no es capicúa
+		//Prueba: Introduzco 111, da resultado capicúa
+		//Prueba: Introduzco 122, no es capicúa
+		//Prueba: Introduzco 1221, es capicúa
+		//Prueba: Introduzco 1212, no es capicúa
+		
 		int num; 																				//Declaramos la variable para el número que vamos a pedir
 		int u;																					//Utilizamos esta variable para las unidades
 		int d;																					//Utilizamos esta variable para las decenas

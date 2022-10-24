@@ -8,6 +8,10 @@ public class Ejercicio06 {
 		// Realiza el “juego de la suma”, que consiste en que aparezcan dos números aleatorios (comprendidos entre 1 y 99)
 		//que el usuario tiene que sumar. La aplicación debe indicar si el resultado de la operación es correcto o incorrecto. 
 		//Para calcular números aleatorios debes usar la función Math.random(), que devuelve un número aleatorio comprendido entre 0 y 1.
+
+		//Prueba: El programa me pide la suma de 86 y 75, al introducir 1, da "Resultado incorrecto"
+		//Prueba: El programa me pide la suma de 67 y 66 , al introducir 133 me da "Enhorabuena, resultado correcto"
+		//Prueba: El programa me pide la suma de 25 y 0, al introducir 25, da "Enhorabuena, resultado correcto
 		
 		int num1;																						// Variable para el primer número que pidamos
 		int num2;																						// Variable para el segundo numero que pidamos

@@ -7,6 +7,9 @@ public class Ejercicio07 {
 	public static void main(String[] args) {
 		// Dada una hora por teclado, (horas, minutos y segundos) realiza un algoritmo que muestre la hora después de incrementarle un segundo.
 		
+		//Prueba: Introduzco 21, 00, 00; la Hora es: 21h, 0 min y 1 seg
+		//Prueba: Introduzco 21, 59, 59; la hora es: 22h, 0 min y 0 seg
+		
 		int seg;																								// Variable para declarar los segundos
 		int min;																								// Variable para declarar los minutos
 		int hora;																								// Variable para declarar las horas

@@ -9,6 +9,9 @@ public class Ejercicio08 {
 		// estancia es superior a 7 y la distancia superior a 800 km el billete tiene una reducción del 30%. El precio por kilómetro es de 2,5€. 
 		// La distancia a recorrer y el número de días de estancia los debes solicitar al usuario por teclado.
 		
+		//Prueba: Introduzco 600, 2; el precio del billete es 1500
+		//Prueba: Introduzco 800, 7; el precio del billete es 1400
+		
 		int distancia;																	// Variable para declarar la distancia
 		int dias;																		// Variable para declarar los días
 		double precioBillete;															// Variable para declarar el precio
